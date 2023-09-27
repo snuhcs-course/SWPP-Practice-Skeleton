@@ -23,7 +23,6 @@ public class DiceRollViewModel extends ViewModel {
                 new DiceRollUiState(
                         rollDiceUseCase.getFirstDieValue(),
                         rollDiceUseCase.getSecondDieValue(),
-                        // currently updates from previous UI
                         rollDiceUseCase.getNumRoll()
                 )
         );

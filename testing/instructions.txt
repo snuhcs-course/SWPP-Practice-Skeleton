@@ -1,0 +1,20 @@
+Lab 04: App Architecture exercise
+
+
+You will complete the implementation so that the reset button initializes the "# Rolled" value to 0.
+
+Each .java file has the section commented as
+    //// IMPLEMENT HERE ////
+
+    ////////////////////////
+to notifiy you where to write code
+
+You need to implement the followings:
+
+    - The last part of OnCreate method in MainActivity.java
+    - notifyReset() method in DiceRollViewModel.java
+    - notifyReset() method in RollDiceUseCase.java
+    - resetNumRoll() method in NumRollRepository.java
+    - resetNumRoll() method in NumRollDataSource.java
+
+zip the 5 java files and upload via ETL until Oct. 5 11:59pm

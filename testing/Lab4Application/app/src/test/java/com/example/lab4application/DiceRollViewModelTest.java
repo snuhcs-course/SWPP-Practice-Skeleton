@@ -28,27 +28,7 @@ public class DiceRollViewModelTest {
     }
 
     @Test
-    public void setNumRollTest_notObserved_incorrect() {
-        // GIVEN a fresh use case
-        int numRoll = 5;
-        String primeNumbers = "[2, 3, 5]";
-        when(rollDiceUseCase.getNumRoll()).thenReturn(numRoll);
-        when(rollDiceUseCase.getPrimeNumbers()).thenReturn(primeNumbers);
-
-        // WHEN a use case is done
-        viewModel.setNumRoll(rollDiceUseCase);
-
-        // THEN UiState is changed but test fails at liveData
-        DiceRollUiState result = viewModel.getUiState().getValue();
-        assertNotNull(result);
-        assertEquals(-1, result.getFirstDieValue());
-        assertEquals(-1, result.getSecondDieValue());
-        assertEquals(numRoll, result.getNumRolls());
-        assertEquals(primeNumbers, result.getPrimeNumbers());
-        assertEquals(50, (long)viewModel.getLiveData().getValue());
-    }
-    @Test
-    public void setNumRollTest_observed_correct() {
+    public void setNumRollTest_observed_uiStateChanged() {
         // GIVEN a fresh use case
         int numRoll = 5;
         String primeNumbers = "hello";

@@ -23,8 +23,6 @@ public class NumRollDataSource {
         editor.apply();
     }
     public void resetNumRoll() {
-        //// IMPLEMENT HERE ////
-
-        ////////////////////////
+        storeNumRoll(0);
     }
 }

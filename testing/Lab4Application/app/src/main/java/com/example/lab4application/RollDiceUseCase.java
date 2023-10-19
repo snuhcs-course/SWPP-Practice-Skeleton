@@ -5,7 +5,7 @@ public class RollDiceUseCase {
     private final RollDiceUtils rollDiceUtils;
     private int firstDieValue = -1;
     private int secondDieValue = -1;
-    private String primeNumbersSmallerThanProduct = "";
+    private String primeNumbersSmallerThanProduct = "[]";
 
     public RollDiceUseCase(NumRollRepository numRollRepository, RollDiceUtils rollDiceUtils) {
         this.numRollRepository = numRollRepository;
@@ -22,9 +22,7 @@ public class RollDiceUseCase {
         numRollRepository.incNumRoll();
     }
     public void notifyReset() {
-        //// IMPLEMENT HERE ////
-
-        ////////////////////////
+        numRollRepository.resetNumRoll();
     }
     public int getFirstDieValue() {return firstDieValue;}
     public int getSecondDieValue() {return secondDieValue;}

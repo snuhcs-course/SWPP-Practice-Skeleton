@@ -57,8 +57,13 @@ public class MainActivity extends AppCompatActivity {
         diceRollViewModel.setNumRoll(rollDiceUseCase);
 
         // "Reset" button should make "# Rolled" to 0
-        //// IMPLEMENT HERE ////
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                diceRollViewModel.notifyReset(rollDiceUseCase);
+                diceRollViewModel.getData(rollDiceUseCase);
+            }
+        });
 
-        ////////////////////////
     }
 }

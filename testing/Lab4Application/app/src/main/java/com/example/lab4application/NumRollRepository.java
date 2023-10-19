@@ -13,8 +13,6 @@ public class NumRollRepository {
         numRollDataSource.storeNumRoll(numRollDataSource.getNumRoll() + 1);
     }
     public void resetNumRoll() {
-        //// IMPLEMENT HERE ////
-
-        ////////////////////////
+        numRollDataSource.resetNumRoll();
     }
 }

@@ -3,26 +3,45 @@ package com.example.creationalpattern;
 public class OperatingSystem {
     private static String type = "MAC";
     public static void main(String[] args){
+        adder();
+        multiplier();
+    }
 
-        String currentOperatingSystem = getType();
-        String message = "Log message";
+    private static void adder(){
+        String loggerType = "File";
+        String message = "log from adder";
 
-        if (currentOperatingSystem.equals("MAC")){
+        if (loggerType.equals("MAC")){
             MACLogger logger = new MACLogger();
             logger.error(message);
-        } else if (currentOperatingSystem.equals("Android")){
+        } else if (loggerType.equals("Android")){
             AndroidLogger logger = new AndroidLogger();
             logger.error(message);
-        } else if (currentOperatingSystem.equals("File")){
+        } else if (loggerType.equals("File")){
             FileLogger logger = new FileLogger();
             logger.error(message);
-        } else if (currentOperatingSystem.equals("Network")){
+        } else if (loggerType.equals("Network")){
             NetworkLogger logger = new NetworkLogger();
             logger.error(message);
         }
     }
 
-    public static String getType(){
-        return type;
+    private static void multiplier(){
+        String loggerType = "Android";
+        String message = "log from multiplier";
+
+        if (loggerType.equals("Mac")){
+            MACLogger logger = new MACLogger();
+            logger.error(message);
+        } else if (loggerType.equals("Android")){
+            AndroidLogger logger = new AndroidLogger();
+            logger.error(message);
+        } else if (loggerType.equals("File")){
+            FileLogger logger = new FileLogger();
+            logger.error(message);
+        } else if (loggerType.equals("Network")){
+            NetworkLogger logger = new NetworkLogger();
+            logger.error(message);
+        }
     }
 }

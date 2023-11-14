@@ -17,7 +17,7 @@ public class ModelTrainer {
     public ModelTrainer(String model, String trainDataloader, String testDataloader, String optimizer, String lossFunction, double learningRate, int batchSize, int inputSize){
         this.model = model;
         this.trainDataloader = trainDataloader;
-        this.validDataloader = "DefaultValidDataLoader";
+        this.validDataloader = "DefaultValidDataloader";
         this.testDataloader = testDataloader;
         this.optimizer = optimizer;
         this.lossFunction = lossFunction;
@@ -33,7 +33,7 @@ public class ModelTrainer {
         this.model = model;
         this.trainDataloader = trainDataloader;
         this.validDataloader = validDataloader;
-        this.validDataloader = "DefaultValidDataLoader";
+        this.validDataloader = "DefaultValidDataloader";
         this.testDataloader = testDataloader;
         this.optimizer = optimizer;
         this.lossFunction = lossFunction;

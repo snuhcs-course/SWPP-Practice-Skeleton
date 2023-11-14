@@ -84,7 +84,7 @@ public class ModelTrainer {
         this.lossFunction = lossFunction;
     }
 
-    public void setLearningRate(float learningRate) {
+    public void setLearningRate(double learningRate) {
         this.learningRate = learningRate;
     }
 

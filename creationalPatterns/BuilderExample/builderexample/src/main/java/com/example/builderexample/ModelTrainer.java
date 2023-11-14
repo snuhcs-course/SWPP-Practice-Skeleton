@@ -17,14 +17,10 @@ public class ModelTrainer {
     public ModelTrainer(String model, String trainDataloader, String testDataloader, String optimizer, String lossFunction, double learningRate, int batchSize, int inputSize){
         this.model = model;
         this.trainDataloader = trainDataloader;
-        this.validDataloader = "DefaultValidDataloader";
         this.testDataloader = testDataloader;
         this.optimizer = optimizer;
         this.lossFunction = lossFunction;
         this.learningRate = learningRate;
-        this.preProcessor = "DefaultPreProcessor";
-        this.postProcessor = "DefaultPostPreProcessor";
-        this.visualizer = "DefaultVisualizer";
         this.batchSize = batchSize;
         this.inputSize = inputSize;
     }
@@ -33,14 +29,10 @@ public class ModelTrainer {
         this.model = model;
         this.trainDataloader = trainDataloader;
         this.validDataloader = validDataloader;
-        this.validDataloader = "DefaultValidDataloader";
         this.testDataloader = testDataloader;
         this.optimizer = optimizer;
         this.lossFunction = lossFunction;
         this.learningRate = learningRate;
-        this.preProcessor = "DefaultPreProcessor";
-        this.postProcessor = "DefaultPostPreProcessor";
-        this.visualizer = "DefaultVisualizer";
         this.batchSize = batchSize;
         this.inputSize = inputSize;
     }

@@ -1,4 +1,4 @@
-package com.example.simpleexample;
+package com.example.factorymethodexample;
 
 public class Client {
     public static void main(String args[]){

@@ -1,4 +1,4 @@
-package com.example.simpleexample;
+package com.example.factorymethodexample;
 
 public class GalaxyS23 implements Phone{
     @Override

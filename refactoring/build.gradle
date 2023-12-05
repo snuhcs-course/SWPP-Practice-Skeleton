@@ -62,8 +62,6 @@ run {
 // (We cannot print one by one because of the possible presence of repeated tests; for those, any failure => overall failure)
 var currentSuite = new HashMap<String, Tuple2<String, TestResult>>()
 test {
-    useJUnitPlatform()
-
     systemProperty("file.encoding", "UTF-8")
 
     testLogging {

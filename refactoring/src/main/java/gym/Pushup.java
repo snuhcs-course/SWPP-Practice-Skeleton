@@ -1,4 +1,4 @@
-package one;
+package gym;
 
 public class Pushup extends Exercise {
     public Pushup() {

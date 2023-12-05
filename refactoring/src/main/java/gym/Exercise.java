@@ -1,4 +1,4 @@
-package one;
+package gym;
 
 public class Exercise {
     String name;

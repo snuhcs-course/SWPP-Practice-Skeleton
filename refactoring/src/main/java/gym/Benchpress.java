@@ -1,4 +1,4 @@
-package one;
+package gym;
 
 public class Benchpress extends Exercise {
     private int weight;

@@ -1,4 +1,4 @@
-package one;
+package gym;
 
 public class Squat extends Exercise {
     public Squat() {
